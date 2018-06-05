@@ -67,9 +67,24 @@ After then run `node migration.js run create_table_users.js up`
 run `npm run dev`
 
 ### api detail:
-* POST /api/user {email:'', password:''} - Creates the user in the database with a non-plain text password.
-* PUT /api/user/:id {email:''} - Update user's email.
-* DELETE /api/user/:id - Deletes a user.
-* GET /api/user/:id - Gets user's email.
+* POST /api/user --> Create user
+  payload example:
+  ```
+  {
+  	"email" : "test@123456.com",
+  	"first_name" : "test",
+  	"last_name" : "test",
+  	"password" : "test"
+  }
+  ```
+* PUT /api/user/:id --> Update user's email.
+    payload example:
+    ```
+    {
+        "email" : "test@123456.com"
+    }
+    ```
+* DELETE /api/user/:id --> Deletes a user.
+* GET /api/user/:id --> Gets user's email.
 
 
