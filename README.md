@@ -25,7 +25,7 @@ update DB connection value from migrations\migrations.js
     database : 'test'
 });`
 
-After then run `node migration.js run create_table_users.js up`
+After then from root path of folder run `node migration/migration.js run create_table_users.js up`
 
 #### step 4 start server
 
@@ -60,7 +60,7 @@ update DB connection value from migrations\migrations.js
     database : 'test'
 });`
 
-After then run `node migration.js run create_table_users.js up`
+After then from root path of folder run `node migration/migration.js run create_table_users.js up`
 
 #### step 4 start server
 
